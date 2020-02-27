@@ -1,58 +1,31 @@
-import React from 'react';
+import React, {Component} from 'react';
+
 import './main.scss';
 import Article from "../article/Article";
+import postai from "../../data/postai"
 
-function Main() {
-    return (
+//react.component jei virsuje neimpoirtuoju
 
-        <main>
-          <div className="row">
-
-            <div className="col">
-                <Article
-               data={{name:"pirmasVardas",
-                   text:"pirmasTekstas"}}
-                />
-            </div>
-              <div className="col">
-                  <Article
-                      data= {{name:"antrasVardas",
-                      text:"antrasTekstas"}}
-                  />
-              </div>
-            <div className="col">
-                <Article
-                    data={{name:"treciasVardas",
-                    text:"treciasTekstas"}}
-                />
-            </div>
-
-        </div>
-            <div className="row">
-                <div className="col">
-                    <Article
-                        data={{name:"ketvirtasVardas",
-                        text:"ketvirtasTekstas"}}
-                    />
-                </div>
-                <div className="col">
-                    <Article
-                       data ={{name:"penktasVardas",
-                           text:"penktasTekstas"}}
-                    />
-                </div>
-                <div className="col">
-                    <Article
-                       data={{name:"sestasVardas",
-                           text:"sestasTekstas"}}
-                    />
+class Main extends Component{
+    render(){
+        const postData = postai.map(post=> <Article data={{
+            key:post.id,
+            title:post.pavadinimas,
+            text:post.tekstas
+        }} />)
+        return(
+            <main>
+                <div className="row">
+                    {postData}
                 </div>
 
+            </main>
+        );
+    }
 
-
-            </div>
-        </main>
-    );
 }
+
+
+
 
 export default Main;
