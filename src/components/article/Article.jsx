@@ -5,8 +5,8 @@ function Article(props) {
     return (
         <div className="contact-card">
             <img src="http://placekitten.com/300/200"/>
-            <h3>{props.name}</h3>
-            <p>{props.text}</p>
+            <h3>{props.data.name}</h3>
+            <p>{props.data.text}</p>
             <a href="#">Daigiau...</a>
         </div>
     )

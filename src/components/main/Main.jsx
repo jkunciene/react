@@ -10,20 +10,20 @@ function Main() {
 
             <div className="col">
                 <Article
-                name="pirmasVardas"
-                text="pirmasTekstas"
+               data={{name:"pirmasVardas",
+                   text:"pirmasTekstas"}}
                 />
             </div>
               <div className="col">
                   <Article
-                      name="antrasVardas"
-                      text="antrasTekstas"
+                      data= {{name:"antrasVardas",
+                      text:"antrasTekstas"}}
                   />
               </div>
             <div className="col">
                 <Article
-                    name="treciasVardas"
-                    text="treciasTekstas"
+                    data={{name:"treciasVardas",
+                    text:"treciasTekstas"}}
                 />
             </div>
 
@@ -31,20 +31,20 @@ function Main() {
             <div className="row">
                 <div className="col">
                     <Article
-                        name="ketvirtasVardas"
-                        text="ketvirtasTekstas"
+                        data={{name:"ketvirtasVardas",
+                        text:"ketvirtasTekstas"}}
                     />
                 </div>
                 <div className="col">
                     <Article
-                        name="penktasVardas"
-                        text="penktasTekstas"
+                       data ={{name:"penktasVardas",
+                           text:"penktasTekstas"}}
                     />
                 </div>
                 <div className="col">
                     <Article
-                        name="sestasVardas"
-                        text="sestasTekstas"
+                       data={{name:"sestasVardas",
+                           text:"sestasTekstas"}}
                     />
                 </div>
 
