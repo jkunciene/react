@@ -6,6 +6,7 @@ import postai from "../../data/postai";
 import Location from "../location/Location";
 import Form from "../form/Form";
 
+
 //react.component jei virsuje neimpoirtuoju
 
 class Main extends Component{
