@@ -5,7 +5,7 @@ import Article from "../article/Article";
 import postai from "../../data/postai";
 import Location from "../location/Location";
 import Form from "../form/Form";
-
+import Test from "../test/Test";
 
 //react.component jei virsuje neimpoirtuoju
 
@@ -40,10 +40,14 @@ class Main extends Component{
         const postLocation = this.state.places.map(places=> <Location places={places.name}/>)
         return(
             <main>
+                {/*<div className="row">*/}
+                {/*    {postData}*/}
+                {/*    <Form />*/}
+                {/*    {postLocation}*/}
+                {/*   */}
+                {/*</div>*/}
                 <div className="row">
-                    {postData}
-                    <Form />
-                    {postLocation}
+                    <Test/>
                 </div>
 
             </main>
